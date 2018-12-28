@@ -2,8 +2,9 @@ package com.saagie.tooling.featurebrawl.infra
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
 
-@SpringBootApplication
+@SpringBootApplication(exclude = arrayOf(MongoAutoConfiguration::class))
 class FeaturebrawlApplication
 
 
